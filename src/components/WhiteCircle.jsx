@@ -17,7 +17,7 @@ export default class WhiteCircle extends Component {
           <MDBRow className="section2">
             <MDBCol md="4">
               <Animation type="bounceIn" duration="3s">
-                <img src="assets/icon1.png" />
+                <img src="assets/icon1.png"  alt="Responsive" />
                 <h5>Responsive Web Sites</h5>
                 <p>Get your Responsive Landing page for all
                 devices within a week.</p>
@@ -26,7 +26,7 @@ export default class WhiteCircle extends Component {
             </MDBCol>
             <MDBCol md="4">
               <Animation type="bounceIn" duration="3s">
-                <img src="assets/icon2.png" />
+                <img src="assets/icon2.png" alt="scratch" />
                 <h5>User Experience Focused</h5>
                 <p>By using the principles of Material Design,
                   I'm able to create a framework that incorporates components and
@@ -36,7 +36,7 @@ export default class WhiteCircle extends Component {
             </MDBCol>
             <MDBCol md="4">
               <Animation type="bounceIn" duration="3s">
-                <img src="assets/icon3.png" />
+                <img src="assets/icon3.png"  alt="Experience" />
                 <h5>From scratch to 100%</h5>
                 <p>Include's web site domain, DB and hosting
 							server.</p>

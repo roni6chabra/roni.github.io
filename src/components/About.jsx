@@ -1,12 +1,51 @@
 import React, { Component } from 'react';
-import {  MDBRow, MDBCol } from "mdbreact";
+import { MDBRow, MDBCol } from "mdbreact";
 import { MDBBtn, MDBInput, MDBIcon } from "mdbreact";
+import { Button, ModalFooter, ModalHeader, Modal, Container } from "mdbreact";
+import axios from 'axios';
 
 export default class About extends Component {
-    render() {
-        return (
 
-          <MDBRow className="page-footer black scrollspy" id="contact">
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false,
+      modalText: ''
+    };
+  }
+
+  toggleModal = () => {
+    this.setState({
+      modal: !this.state.modal
+    });
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(form);
+    var self = this;
+    axios.post('./../mail.php', data)
+      .then(function (response) {
+        self.setState({
+          modal: !self.state.modal,
+          modalText: response.data
+        });
+
+      })
+      .catch(function (error) {
+        console.log(error);
+        self.setState({
+          modal: !self.state.modal,
+          modalText: 'mail.php does not Exist!'
+        });
+      });
+  }
+
+  render() {
+    return (
+      <div>
+        <MDBRow className="page-footer black scrollspy" id="contact">
           <MDBCol md="4" className="aboutme">
 
             <h4>About me</h4>
@@ -57,6 +96,16 @@ export default class About extends Component {
           </MDBCol>
 
         </MDBRow>
-        )
-    }
+        {/*Modal*/}
+        <Container>
+          <Modal isOpen={this.state.modal} toggle={this.toggleModal}>
+            <ModalHeader toggle={this.toggleModal}>{this.state.modalText}</ModalHeader>
+            <ModalFooter>
+              <Button color="secondary" onClick={this.toggleModal}>Close</Button>
+            </ModalFooter>
+          </Modal>
+        </Container>
+      </div>
+    )
+  }
 }
