@@ -36,12 +36,12 @@
 		color: #9AC0BA;
 		text-shadow: 2px 2px #000000;
 		font-family: 'Oleo Script', cursive;
-		font-size: 4.2rem;
+		font-size: 3.6rem;
 		font-weight: 400;
 	}
 	h2 {
 		color: #CCD9CE;
-		font-size: 3.56rem;
+		font-size: 2.5rem;
 		text-shadow: 2px 2px #000000;
 		font-family: 'Oleo Script', cursive;
 	}
@@ -52,8 +52,8 @@
 		font-family: 'Oleo Script', cursive;
 	}
 	> div{
-		height: 500px;
-		padding-top: 80px;
+		min-height: 500px;
+		padding: 50px 0px;
 	}
 }
 
@@ -308,3 +308,10 @@
 		background-color: #F44336 !important;
 	}
 }
+@media only screen and (max-width: 767px) {
+	.imagination {
+	  width:100%
+	}
+	#contact .btn-floating{
+		margin: 0px 10px;}
+  }

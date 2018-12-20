@@ -33,8 +33,8 @@ export default class Header extends Component {
                             </Animation>
                             <Animation type="bounceIn" delay="1s">
                                 <div className="files">
-                                    <a className="btn" href="assets/Roni Chabra - Resume EN.docx">English Resume</a>
-                                    <a className="btn" href="assets/Roni Chabra - Resume.docx">Hebrew Resume</a>
+                                    <a className="btn" href="assets/Roni Chabra - Resume EN.pdf">English Resume</a>
+                                    <a className="btn" href="assets/Roni Chabra - Resume.pdf">Hebrew Resume</a>
                                 </div>
                             </Animation>
                         </Parallax>
