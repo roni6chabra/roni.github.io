@@ -16,7 +16,7 @@
             "title": "Basket Price",
             "img": "cart.jpg",
             "description": "Calcalist project - calculate average income throw the years VS grocery basket",
-            "link": "http://roni6ch.github.io"
+            "link": "http://ronichabra.com/projects/moneyPrice/"
         },
         {
             "title": "LoveHearts Bingo",
@@ -46,7 +46,7 @@
             "title": "Spontanious",
             "img": "spontanious.jpg",
             "description": "Fly Now (React+Redux)",
-            "link": "https://ronichabra.000webhostapp.com"
+            "link": "http://ronichabra.com/projects/spontaneous/"
         }
     ]
 }

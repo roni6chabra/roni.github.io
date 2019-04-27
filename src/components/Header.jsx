@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
-import { MDBRow, MDBCol, Animation } from "mdbreact";
+import { MDBPopover , MDBPopoverBody, MDBPopoverHeader,MDBBtn, MDBRow, MDBCol, Animation } from "mdbreact";
 
 
 export default class Header extends Component {
@@ -23,7 +23,7 @@ export default class Header extends Component {
                             <Animation type="bounceIn" delay="1s">
                                 <div>
                                     <ul className="headerIcons">
-                                        <li><a href={"https://www.linkedin.com/in/roni-chabra-61698558"} target="_blank" className="fa fa-linkedin" rel="noopener noreferrer"></a></li>
+                                        <li><a href={"www.linkedin.com/in/roni-chabra-profile"} target="_blank" className="fa fa-linkedin" rel="noopener noreferrer"></a></li>
                                         <li><a href="https://www.facebook.com/roni6ch" target="_blank" className="fa fa-facebook" rel="noopener noreferrer"></a></li>
                                         <li><a href="https://gitlab.com/users/Roni691986/projects" target="_blank" className="fa fa-code-fork" rel="noopener noreferrer"></a></li>
                                         <li><a href="tel:+972502560005" className="fa fa-phone" rel="noopener noreferrer"></a></li>
