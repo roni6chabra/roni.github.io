@@ -1,7 +1,31 @@
 .App {
 	text-align: center;
+	overflow-x: hidden;
 }
 
+::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.slide-fwd-center > div:hover img{-webkit-animation:rotate-in-center .6s cubic-bezier(.25,.46,.45,.94) both;animation:rotate-in-center .6s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes rotate-in-center{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);opacity:0}100%{-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotate-in-center{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);opacity:0}100%{-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}
 .col,
 .col-md-12 {
 	padding: 0px;
@@ -33,22 +57,22 @@
 
 .section1 {
 	h1 {
-		color: #9AC0BA;
+		color: #5d7283;
 		text-shadow: 2px 2px #000000;
 		font-family: 'Oleo Script', cursive;
 		font-size: 3.6rem;
 		font-weight: 400;
 	}
 	h2 {
-		color: #CCD9CE;
+		color: #9ca9ad;
 		font-size: 2.5rem;
 		text-shadow: 2px 2px #000000;
 		font-family: 'Oleo Script', cursive;
 	}
 	h5 {
-		color: #ffffff;
+		color: #5d7283;
 		font-size: 1.64rem;
-		text-shadow: 2px 1px #000000;
+		text-shadow: 1px 1px #0a0b0b;
 		font-family: 'Oleo Script', cursive;
 	}
 	> div{
@@ -59,6 +83,7 @@
 
 .headerIcons {
 	display: inline-block;
+	margin-bottom:0px;
 	li {
 		margin: 5px !important;
 		float: left;
@@ -75,25 +100,31 @@
 			-moz-transition: .5s ease-in-out;
 			-o-transition: .5s ease-in-out;
 			-ms-transition: .5s ease-in-out;
+			opacity:0.6;
+			font-size: 0px;
+		}
+		a:before{
+			font-size: 20px;
 		}
 		a:hover {
 			color: #fff;
 			line-height: 40px;
 			border: 2px solid #F6EDD3;
+			opacity:1;
 		}
-		.fa-linkedin:hover {
+		.fa-linkedin {
 			background: #0277bd;
 		}
-		.fa-facebook:hover {
+		.fa-facebook {
 			background: #039be5;
 		}
-		.fa-code-fork:hover {
+		.fa-code-fork {
 			background: #fc792a;
 		}
-		.fa-phone:hover {
+		.fa-phone {
 			background: #4CAF50;
 		}
-		.fa-envelope-o:hover {
+		.fa-envelope-o {
 			background: #F44336;
 		}
 	}
@@ -108,6 +139,7 @@
 		-moz-transition: .35s ease-in-out;
 		-o-transition: .35s ease-in-out;
 		-ms-transition: .35s ease-in-out;
+		cursor: pointer;
 	}
 	a:hover {
 		background-color: #fff;
@@ -147,11 +179,11 @@
 	min-height: 600px;
 	overflow: hidden;
 	.sentence {
-		color: #fff;
-		font-weight: bold;
+		color: #fef8ed;
+		text-shadow: 1px 1px #000000;
 		width: 70%;
 		text-align: center;
-		font-size: 1.64rem;
+		font-size: 2rem;
 		font-family: 'Oleo Script', cursive;
 		margin: 10% auto;
 	}
@@ -187,7 +219,7 @@
 			margin: 0 auto;
 		}
 		.carousel-item .view {
-			opacity: 0.75;
+			opacity: 0.85;
 		}
 		.carousel-item .view:hover {
 			opacity: 1;
@@ -209,6 +241,13 @@
 		}
 		.carousel-control-next-icon {
 			left: 55px;
+		}
+		.carousel-fade .carousel-item{
+			transition: .5s ease-in-out;
+			-webkit-transition: .5s ease-in-out;
+			-moz-transition: .5s ease-in-out;
+			-o-transition: .5s ease-in-out;
+			-ms-transition: .5s ease-in-out;
 		}
 	}
 }
@@ -243,7 +282,8 @@
 
 #contact {
 	color: #fff;
-	padding: 2% 10%;
+	padding: 2% 10%;    
+	background-color: #0a1827 ;
 	h4 {
 		font-family: 'Oleo Script', cursive;
 		text-align: left;

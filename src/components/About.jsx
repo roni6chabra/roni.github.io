@@ -45,7 +45,7 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        <MDBRow className="page-footer black scrollspy" id="contact">
+        <MDBRow className="page-footer scrollspy" id="contact">
           <MDBCol md="4" className="aboutme">
 
             <h4>About me</h4>

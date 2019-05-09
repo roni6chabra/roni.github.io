@@ -14,7 +14,7 @@ export default class WhiteCircle extends Component {
               </div>
             </MDBCol>
           </MDBRow>
-          <MDBRow className="section2">
+          <MDBRow className="section2 slide-fwd-center">
             <MDBCol md="4">
               <Animation type="bounceIn" duration="3s">
                 <img src="assets/icon1.png"  alt="Responsive" />

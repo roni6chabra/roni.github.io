@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
-import { MDBPopover , MDBPopoverBody, MDBPopoverHeader,MDBBtn, MDBRow, MDBCol, Animation } from "mdbreact";
+import { MDBRow, MDBCol, Animation } from "mdbreact";
 
 
 export default class Header extends Component {
@@ -9,7 +9,7 @@ export default class Header extends Component {
             <MDBRow>
                 <MDBCol>
                     <div className="section1">
-                        <Parallax bgImage={require('./../bg1.jpg')} strength={500}>
+                        <Parallax bgImage={require('./../bg4.jpg')} strength={500}>
                             <Animation type="zoomIn" >
                                 <h1>Roni Chabra</h1>
                             </Animation>
@@ -23,18 +23,17 @@ export default class Header extends Component {
                             <Animation type="bounceIn" delay="1s">
                                 <div>
                                     <ul className="headerIcons">
-                                        <li><a href={"www.linkedin.com/in/roni-chabra-profile"} target="_blank" className="fa fa-linkedin" rel="noopener noreferrer"></a></li>
-                                        <li><a href="https://www.facebook.com/roni6ch" target="_blank" className="fa fa-facebook" rel="noopener noreferrer"></a></li>
-                                        <li><a href="https://gitlab.com/users/Roni691986/projects" target="_blank" className="fa fa-code-fork" rel="noopener noreferrer"></a></li>
-                                        <li><a href="tel:+972502560005" className="fa fa-phone" rel="noopener noreferrer"></a></li>
-                                        <li><a href="#contactForm" className="fa fa-envelope-o" rel="noopener noreferrer"></a></li>
+                                        <li><a href="https://www.linkedin.com/in/roni-chabra-profile" target="_blank" className="fa fa-linkedin" rel="noopener noreferrer">linkedin</a></li>
+                                        <li><a href="https://www.facebook.com/roni6ch" target="_blank" className="fa fa-facebook" rel="noopener noreferrer">facebook</a></li>
+                                        <li><a href="https://gitlab.com/users/Roni691986/projects" target="_blank" className="fa fa-code-fork" rel="noopener noreferrer">gitlab</a></li>
+                                        <li><a href="tel:+972502560005" className="fa fa-phone" rel="noopener noreferrer">phone</a></li>
+                                        <li><a href="#contactForm" className="fa fa-envelope-o" rel="noopener noreferrer">contact</a></li>
                                     </ul>
                                 </div>
                             </Animation>
                             <Animation type="bounceIn" delay="1s">
                                 <div className="files">
-                                    <a className="btn" href="assets/Roni Chabra - Resume EN.pdf">English Resume</a>
-                                    <a className="btn" href="assets/Roni Chabra - Resume.pdf">Hebrew Resume</a>
+                                    <a className="btn" href="assets/Roni Chabra - Resume.pdf" target="_blank">Download Resume</a>
                                 </div>
                             </Animation>
                         </Parallax>
