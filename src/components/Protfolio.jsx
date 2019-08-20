@@ -15,11 +15,10 @@ class Protfolio extends Component {
       modalText: ''
     };
   }
-  componentDidMount = () => {
+  componentDidMount () {
     var self = this;
     axios.get('./assets/works.json')
       .then(function (response) {
-        console.log(response.data['works']);
         self.props.INIT_WORKS(response.data['works']);
       /*  self.setState({
           works: response.data['works']
