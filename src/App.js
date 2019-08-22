@@ -15,7 +15,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     console.log("%cRoniChabra.com - Protfolio & Resume :)", "color: #007bff; font-size: x-large");
-    console.log("test1");
   }
   render() {
     return (
