@@ -1,0 +1,52 @@
+{
+    "works": [
+        {
+            "title": "CVMatcher",
+            "img": "cvmatcher.jpg",
+            "description": "Match between job seekers and employers.",
+            "link": "http://www.ronichabra.com/projects/cvmatcher"
+        },
+        {
+            "title": "MapMap",
+            "img": "mapmap.jpg",
+            "description": "Find your Home!",
+            "link": "http://www.ronichabra.com/projects/mapmap"
+        },
+        {
+            "title": "Basket Price",
+            "img": "cart.jpg",
+            "description": "Calcalist project - calculate average income throw the years VS grocery basket",
+            "link": "http://ronichabra.com/projects/moneyPrice/"
+        },
+        {
+            "title": "LoveHearts Bingo",
+            "img": "lovehearts.jpg",
+            "description": "One of my works for 888 Bingo Company.",
+            "link": "https://www.loveheartsbingo.com"
+        },
+        {
+            "title": "Valentine's Day",
+            "img": "valentines.jpg",
+            "description": "4 my love",
+            "link": "http://www.ronichabra.com/projects/v2018"
+        },
+        {
+            "title": "Barber Shop",
+            "img": "barber.jpg",
+            "description": "Schedule an appointment with the barber online",
+            "link": "http://www.ronichabra.com/projects/barber"
+        },
+        {
+            "title": "Bingo And Beyond",
+            "img": "beyond.jpg",
+            "description": "Bingo work for 888 Bingo Company.",
+            "link": "https://www.bingoandbeyond.com"
+        },
+        {
+            "title": "Spontanious",
+            "img": "spontanious.jpg",
+            "description": "Fly Now (React+Redux)",
+            "link": "http://ronichabra.com/projects/spontaneous/"
+        }
+    ]
+}
